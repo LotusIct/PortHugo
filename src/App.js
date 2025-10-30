@@ -13,7 +13,7 @@ import Quote from "./components/Quote"
 import FamiliaPage from "./pages/DireitoFamiliaPage";
 import ImobiliarioPage from "./pages/ImobiliarioPage"
 import TributarioPage from "./pages/TributarioPage"
-import TrabalhistaPage from "./pages/TrabalhistaPagee"
+import TrabalhistaPage from "./pages/TrabalhistaPage"
 
 import "./App.css";
 
