@@ -1,0 +1,58 @@
+/* Quote.css */
+.quote-container {
+  background-color: #46100c; /* fundo vermelho vivo */
+  color: #fff;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  margin-top: 60px;
+}
+
+.quote {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2; /* garante que o texto fique acima das aspas */
+}
+
+.quote p {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  margin: 0;
+  font-style: italic;
+}
+
+.quote span {
+  display: block;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+/* Aspas arredondadas próximas ao texto */
+.quote-container::before,
+.quote-container::after {
+  font-family: "Georgia", serif; /* elegante e arredondada */
+  font-weight: bold;
+  font-size: 12rem; /* um pouco menor */
+  position: absolute;
+  color: rgba(255, 255, 255, 0.15); /* suave atrás do texto */
+  z-index: 1;
+}
+
+.quote-container::before {
+  content: '“';
+  top: 5%;
+  left: 20%;
+}
+
+.quote-container::after {
+  content: '”';
+  bottom: -20%;
+  right: 20%;
+}

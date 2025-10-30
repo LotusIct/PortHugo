@@ -1,0 +1,92 @@
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 80px;
+  height: 80vh;
+  overflow: hidden;
+   background:white;
+}
+
+/* --- conteúdo textual --- */
+.hero-content {
+  z-index: 2;
+  max-width: 45%;
+  color: #222;
+}
+
+.hero-content h1 {
+  font-size: 2.8rem;
+  color: #000;
+  font-weight: 600;
+}
+
+.hero-content p {
+  margin-top: 12px;
+  color: #555;
+  font-size: 1.1rem;
+}
+
+.hero-buttons {
+  margin-top: 30px;
+}
+
+.btn-primary {
+  background: #a00300;
+  color: #fff;
+  padding: 12px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  margin-right: 10px;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background: #7a0000;
+  color: white;
+}
+
+.btn-secondary {
+  border: 1px solid #a00300;
+  color: #a00300;
+  padding: 12px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.btn-secondary:hover {
+  background: #a00300;
+  color: #fff !important;
+}
+
+/* --- imagem diagonal na parte vermelha --- */
+.hero-image {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 60%;
+  height: 100%;
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+
+  /* recorte diagonal */
+  clip-path: polygon(35% 0, 100% 0, 100% 100%, 0 120%);
+  background-color: #a00300;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 60%;
+  height: 100%;
+  background-color: rgba(160, 3, 0, 0); /* camada vermelha sobre a imagem */
+  clip-path: polygon(35% 0, 100% 0, 100% 100%, 0 120%);
+  z-index: 1;
+}

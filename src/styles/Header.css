@@ -1,0 +1,97 @@
+.header {
+  position: fixed;            /* fixa no topo */
+  top: 0;
+  left: 0;
+  width: 95%;
+  z-index: 1000;              /* garante que fique acima de tudo */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 60px;
+  
+  /* efeito vidro */
+  background: rgba(255, 255, 255, 0.74); /* fundo translúcido */
+  backdrop-filter: blur(10px);          /* desfoque atrás do header */
+  -webkit-backdrop-filter: blur(10px);  /* suporte Safari */
+  border-radius: 10px;                  /* cantos arredondados */
+  border: 1px solid rgba(255,255,255,0.3); /* borda suave */
+  
+  color: #000;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* sombra suave */
+}
+
+/* Logo e menu permanecem iguais */
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 0px;
+}
+
+.logo-img {
+  height: 60px;
+  width: 100px;
+  object-fit: contain;
+}
+
+.logo-text {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #b71c1c;
+}
+
+.home-header {
+  color: #b71c1c !important;
+  font-size: 1.1rem;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-menu a {
+  position: relative;
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-menu a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background-color: #b71c1c;
+  transition: width 0.3s ease;
+}
+
+.nav-menu .animate-header:hover::after,
+.nav-menu .animate-header.active::after {
+  width: 100%; /* linha aparece no hover ou se estiver ativo */
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+  color: #b71c1c; /* muda a cor do texto no hover ou se estiver ativo */
+}
+
+
+.nav-menu a:hover {
+  color: #b71c1c;
+}
+
+.button {
+  padding: 8px 16px;
+  background-color: #b71c1c;
+  color: #fff !important;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #8b0000;
+}

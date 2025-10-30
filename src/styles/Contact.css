@@ -1,0 +1,132 @@
+.contact {
+  padding: 40px 0px;
+  background-color: var(--surface-color);
+}
+
+.contact-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 0;
+}
+
+.contact-image {
+  flex: 1 1 50%;
+  max-width: 50%;
+}
+
+.contact-image img {
+  width: 100%;
+  border-radius: 0;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.contact-form-section {
+  flex: 1 1 50%;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+.contact-form-section h2 {
+  font-family: var(--font-secondary);
+  color: var(--primary-color);
+  margin-bottom: 60px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+/* Input groups para float labels */
+/* Input groups para float labels */
+.input-group {
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.input-group input,
+.input-group textarea {
+  padding: 14px 12px 6px 12px;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  font-family: var(--font-primary);
+  font-size: 0.95rem;
+  background: none;
+}
+
+.input-group label {
+  position: absolute;
+  left: 12px;
+  top: 14px;
+  font-family: var(--font-primary);
+  font-size: 0.95rem;
+  color: var(--text-light);
+  pointer-events: none;
+  transition: all 0.2s ease-out;
+}
+
+/* Float label apenas quando o input está focado */
+.input-group input:focus + label,
+.input-group textarea:focus + label {
+  top: -8px;
+  font-size: 0.8rem;
+  color: var(--primary-color);
+  background-color: var(--surface-color);
+  padding: 0 4px;
+}
+
+/* Adiciona um efeito moderno no focus */
+.input-group input:focus,
+.input-group textarea:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(183,28,28,0.2); /* sombra sutil vermelha */
+  outline: none;
+}
+
+
+.contact-form button {
+  padding: 10px 12px;
+  border-radius: 6px;
+  font-family: var(--font-primary);
+  font-size: 0.95rem;
+  border: none;
+  background-color: var(--primary-color);
+  color: white;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: var(--accent-color);
+}
+
+/* Responsivo */
+@media (max-width: 1024px) {
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-image,
+  .contact-form-section {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+
+  .contact-image img {
+    height: 250px;
+  }
+}

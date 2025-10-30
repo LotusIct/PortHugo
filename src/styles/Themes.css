@@ -1,0 +1,51 @@
+.themes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 20px auto 80px auto;
+  max-width: 1400px;
+}
+
+.theme-card {
+  position: relative;
+  width: 350px;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: default;
+  
+  transition: transform 0.3s;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.theme-card:hover {
+  transform: scale(1.03);
+}
+
+/* Sobreposição permanente */
+.theme-overlay {
+  background: rgba(0, 0, 0, 0.76);
+  width: 100%;
+  padding: 20px;
+  height: 100px;
+  text-align: left;
+}
+
+.theme-title {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.theme-overlay p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #f5f5f5;
+}

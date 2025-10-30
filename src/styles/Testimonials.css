@@ -1,0 +1,96 @@
+.testimonials {
+  padding: 100px 0;
+  background-color: var(--surface-color);
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-family: var(--font-secondary);
+  color: #a00300; /* vermelho forte */
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+/* Slider */
+.testimonial-slider {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+
+/* Cards */
+.testimonial {
+  background-color: #fff; /* deixa mais claro e moderno */
+  padding: 40px 30px 30px 30px;
+  border-radius: 8px;
+  min-height: 180px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  transition: transform 0.3s, box-shadow 0.3s;
+    border: 2px solid #a00300;
+  margin: 0 0 0 -30px; /* margem lateral para dar espaçamento entre os cards */
+}
+
+.testimonial:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.2); /* efeito hover mais forte */
+}
+
+/* Mantém o gap visual no slider */
+.testimonial-slider .slick-slide {
+  padding: 20px 80px;
+  box-sizing: border-box;
+}
+
+/* Ícone bonequinho */
+.testimonial-icon {
+  font-size: 2.5rem;
+  color: #a00300; /* vermelho */
+  margin-bottom: 15px;
+}
+
+/* Texto do depoimento */
+.testimonial p {
+  font-size: 1.1rem;
+  font-style: italic;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.testimonial span {
+  font-weight: 600;
+  color: #a00300;
+}
+
+/* Dots */
+.slick-dots li button:before {
+  color: #a00300;
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: #ff4d4d; /* vermelho mais vibrante */
+}
+
+/* Responsivo */
+@media (max-width: 1024px) {
+  .testimonial-slider {
+    gap: 30px;
+  }
+  .testimonial {
+    min-height: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonials h2 {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,152 @@
+.about {
+  background-color: #0C0C0C;
+  margin: 0 auto;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  border-radius: 8px;
+}
+
+.about-image {
+  flex: 1 1 400px;
+  text-align: center;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+}
+
+.about-text {
+  flex: 1 1 500px;
+}
+
+.about-text h2 {
+  font-size: 2.8rem;
+  color: #a00300;
+  margin-bottom: 20px;
+}
+
+.about-text .highlight {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.about-text h3 {
+  font-size: 1.4rem;
+  color: #a00300;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.about-text p {
+  font-size: 1rem;
+  color: #ffffff;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.btn-contact {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background-color: #a00300; /* verde WhatsApp */
+  color: #fff;
+  font-weight: 600;
+  margin-top: 20px;
+  font-size: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-contact:hover {
+  background-color: #46100c;
+}
+.accordion-item {
+  margin-bottom: 15px;
+  border-radius: 0px;
+  overflow: hidden;
+  background: #0C0C0C;
+    width: 80%;
+    color: white;
+}
+
+.accordion-title {
+  width: 100%;
+  text-align: left;
+  padding: 12px 20px;
+  font-weight: 600;
+  font-size: 1.05rem;
+  cursor: pointer;
+  background: #0C0C0C;
+  border: 3px solid #a00300;
+  display: flex;
+  color: white;
+  border-radius:8px;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s;
+}
+
+.accordion-title:hover,
+.accordion-title.active {
+  background: #a00300;
+  color: #fff;
+  border-radius:8px 8px 0px 0px;
+}
+
+.arrow {
+  display: inline-block;
+  transition: transform 0.3s;
+}
+
+.arrow.open {
+  transform: rotate(180deg);
+}
+
+.accordion-content {
+  padding: 12px 20px;
+  background: #0C0C0C;
+  color: #ffffff;
+  border: 2px solid #a00300;
+  border-radius:0px 0px 8px 8px;
+}
+
+
+@media (max-width: 1024px) {
+  .about-container {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+  }
+
+  .about-image img {
+    max-width: 300px;
+  }
+
+  .about-text h2 {
+    font-size: 2.2rem;
+  }
+
+  .about-text h3 {
+    font-size: 1.2rem;
+  }
+}
