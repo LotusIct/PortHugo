@@ -20,19 +20,19 @@ function Areas() {
       title: "Direito Imobiliário",
       desc: "Contratos e questões imobiliárias.",
       img: imobiliarioImg,
-      link: "/imobiliario"
+      link: "/direito-imobiliario"
     },
     {
       title: "Direito Tributário",
       desc: "Planejamento tributário e impostos.",
       img: tributarioImg,
-      link: "/tributario"
+      link: "/direito-tributario"
     },
     {
       title: "Direito Trabalhista",
       desc: "Relações de trabalho e direitos do trabalhador.",
       img: trabalhistaImg,
-      link: "/trabalhista"
+      link: "/direito-trabalhista"
     },
   ];
 
